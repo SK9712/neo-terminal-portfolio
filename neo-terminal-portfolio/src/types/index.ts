@@ -91,3 +91,10 @@ export interface TypewriterProps {
   delay?: number;
   onComplete?: () => void;
 }
+
+// Breadcrumb types
+export interface BreadcrumbItem {
+  label: string;
+  href: string;
+  current?: boolean;
+}

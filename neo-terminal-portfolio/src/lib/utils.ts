@@ -106,3 +106,22 @@ export function getGreeting(): string {
   if (hour < 18) return "Good afternoon";
   return "Good evening";
 }
+
+/**
+ * Generate breadcrumb path from pathname
+ */
+export function generateBreadcrumbs(pathname: string) {
+  const paths = pathname.split('/').filter(Boolean);
+  return paths.map((path, index) => {
+    const href = '/' + paths.slice(0, index + 1).join('/');
+    const label = path.charAt(0).toUpperCase() + path.slice(1);
+    return { label, href, current: index === paths.length - 1 };
+  });
+}
+
+/**
+ * Class name utility for conditional classes
+ */
+export function cn(...classes: (string | undefined | null | false)[]): string {
+  return classes.filter(Boolean).join(' ');
+}

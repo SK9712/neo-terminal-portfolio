@@ -1,6 +1,9 @@
+import Link from 'next/link';
+import { siteConfig } from '@/lib/config';
+
 export default function Home() {
   return (
-    <main className="min-h-screen p-8 flex items-center justify-center">
+    <div className="min-h-screen p-8 flex items-center justify-center">
       <div className="max-w-4xl w-full">
         <div className="terminal-card animate-fade-in">
           <div className="space-y-4">
@@ -19,16 +22,20 @@ export default function Home() {
               <p className="text-terminal-textMuted">
                 <span className="terminal-prompt">❯</span> ./welcome.sh
               </p>
-              <div className="pl-4 space-y-2">
-                <h1 className="text-4xl font-bold text-gradient mb-4">
-                  Neo-Terminal Portfolio
+              <div className="pl-4 space-y-4">
+                <h1 className="text-4xl md:text-5xl font-bold text-gradient mb-4">
+                  {siteConfig.name}
                 </h1>
-                <p className="text-terminal-text">
+                <p className="text-terminal-text text-lg">
                   System initialized successfully<span className="terminal-cursor"></span>
                 </p>
+                <p className="text-terminal-textMuted text-base">
+                  {siteConfig.description}
+                </p>
+                
                 <div className="pt-4 space-y-1">
                   <p className="text-terminal-textMuted">
-                    <span className="text-terminal-cyan">›</span> Version: 1.0.0
+                    <span className="text-terminal-cyan">›</span> Version: {siteConfig.version}
                   </p>
                   <p className="text-terminal-textMuted">
                     <span className="text-terminal-cyan">›</span> Status: Development
@@ -36,7 +43,31 @@ export default function Home() {
                   <p className="text-terminal-textMuted">
                     <span className="text-terminal-cyan">›</span> Framework: Next.js 14
                   </p>
+                  <p className="text-terminal-textMuted">
+                    <span className="text-terminal-cyan">›</span> Last Updated: {siteConfig.lastUpdated}
+                  </p>
                 </div>
+              </div>
+            </div>
+
+            {/* Quick Actions */}
+            <div className="pt-4 border-t border-terminal-border">
+              <p className="text-terminal-textMuted mb-3">
+                <span className="terminal-prompt">❯</span> Quick navigation:
+              </p>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 pl-4">
+                <Link href="/articles" className="terminal-button text-center">
+                  Articles
+                </Link>
+                <Link href="/projects" className="terminal-button text-center">
+                  Projects
+                </Link>
+                <Link href="/about" className="terminal-button text-center">
+                  About
+                </Link>
+                <Link href="/contact" className="terminal-button text-center">
+                  Contact
+                </Link>
               </div>
             </div>
 
@@ -51,11 +82,11 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Quick Info */}
+        {/* Tech Stack Info */}
         <div className="mt-6 text-center text-terminal-textMuted text-sm">
           <p>Next.js 14 • TypeScript • Tailwind CSS • Neo-Terminal Theme</p>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
