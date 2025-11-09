@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import { navItems, siteConfig } from '@/lib/config';
 import { cn } from '@/lib/utils';
+import ThemeToggle from './ThemeToggle';
 
 export default function Navigation() {
   const pathname = usePathname();
@@ -62,10 +63,15 @@ export default function Navigation() {
                 </Link>
               );
             })}
+            
+            {/* Theme Toggle */}
+            <ThemeToggle />
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
+          {/* Mobile Menu Button & Theme Toggle */}
+          <div className="md:hidden flex items-center space-x-2">
+            <ThemeToggle />
+            <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden terminal-button p-2"
             aria-label="Toggle mobile menu"
@@ -122,6 +128,7 @@ export default function Navigation() {
           </div>
         </div>
       )}
+      </div>
     </nav>
   );
 }

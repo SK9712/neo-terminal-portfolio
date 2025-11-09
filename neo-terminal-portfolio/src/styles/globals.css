@@ -25,8 +25,52 @@
     @apply transition-colors duration-300;
   }
 
-  body.light {
+  /* Light mode styles */
+  html.light body {
     @apply bg-light-bg text-light-text;
+  }
+
+  html.light * {
+    @apply border-light-border;
+  }
+
+  html.light .terminal-card {
+    @apply bg-light-bgLight border-light-border;
+  }
+
+  html.light .terminal-link {
+    @apply text-terminal-cyanDark hover:text-terminal-cyan;
+  }
+
+  html.light .terminal-button {
+    @apply bg-light-bgLight border-light-border text-light-text;
+    @apply hover:border-terminal-cyan hover:text-terminal-cyan;
+  }
+
+  html.light .text-terminal-textMuted,
+  html.light .terminal-textMuted {
+    @apply text-light-textMuted;
+  }
+
+  html.light .text-terminal-text,
+  html.light .terminal-text {
+    @apply text-light-text;
+  }
+
+  html.light nav {
+    @apply bg-light-bg/95;
+  }
+
+  html.light footer {
+    @apply bg-light-bgLight border-light-border;
+  }
+
+  html.light .bg-terminal-bg {
+    @apply bg-light-bg;
+  }
+
+  html.light .bg-terminal-bgLight {
+    @apply bg-light-bgLight;
   }
 }
 
