@@ -46,7 +46,7 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => {
-              const isActive = pathname === item.href;
+              const isActive = pathname.replace(/(?<!^)\/$/, "") === item.href;
               return (
                 <Link
                   key={item.href}

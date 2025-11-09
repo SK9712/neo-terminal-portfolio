@@ -60,6 +60,7 @@ export interface GitHubRepo {
   stargazers_count: number;
   language: string;
   topics: string[];
+  fork: boolean;
 }
 
 // Contact form types
