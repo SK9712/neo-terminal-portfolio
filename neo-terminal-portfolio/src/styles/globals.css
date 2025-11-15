@@ -170,3 +170,78 @@
 ::-moz-selection {
   @apply bg-terminal-cyan text-terminal-bg;
 }
+
+/* src/styles/globals.css - Add this at the end */
+
+/* Prose styles for MDX content */
+.prose-terminal {
+  @apply text-terminal-text;
+}
+
+.prose-terminal h1,
+.prose-terminal h2,
+.prose-terminal h3,
+.prose-terminal h4 {
+  @apply font-bold;
+}
+
+.prose-terminal h1 {
+  @apply text-3xl mt-8 mb-4;
+}
+
+.prose-terminal h2 {
+  @apply text-2xl mt-6 mb-3;
+}
+
+.prose-terminal h3 {
+  @apply text-xl mt-4 mb-2;
+}
+
+.prose-terminal p {
+  @apply mb-4 leading-relaxed;
+}
+
+.prose-terminal ul,
+.prose-terminal ol {
+  @apply mb-4 space-y-2;
+}
+
+.prose-terminal li {
+  @apply text-terminal-text;
+}
+
+.prose-terminal code {
+  @apply px-2 py-1 bg-terminal-bg border border-terminal-border rounded text-terminal-cyan text-sm font-mono;
+}
+
+.prose-terminal pre {
+  @apply my-6;
+}
+
+.prose-terminal pre code {
+  @apply p-0 bg-transparent border-0;
+}
+
+.prose-terminal blockquote {
+  @apply border-l-4 border-terminal-cyan bg-terminal-bg pl-4 py-2 my-4 italic text-terminal-textMuted;
+}
+
+.prose-terminal a {
+  @apply text-terminal-cyan hover:text-terminal-cyanDark underline-offset-4 hover:underline transition-colors;
+}
+
+.prose-terminal strong {
+  @apply text-terminal-cyan font-semibold;
+}
+
+.prose-terminal em {
+  @apply text-terminal-green italic;
+}
+
+.prose-terminal img {
+  @apply rounded-lg border border-terminal-border my-6;
+}
+
+.prose-terminal hr {
+  @apply border-terminal-border my-8;
+}
