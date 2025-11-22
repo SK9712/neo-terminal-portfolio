@@ -127,7 +127,7 @@ export default function ResumeDownload() {
       </div>
 
       {/* Alternative Formats */}
-      <div className="grid grid-cols-3 gap-3">
+      {/* <div className="grid grid-cols-3 gap-3">
         <div className="terminal-card text-center hover:border-terminal-cyan transition-colors cursor-pointer">
           <div className="text-2xl mb-1">📄</div>
           <div className="text-xs text-terminal-textMuted">PDF</div>
@@ -140,7 +140,7 @@ export default function ResumeDownload() {
           <div className="text-2xl mb-1">🔗</div>
           <div className="text-xs text-terminal-textMuted">LinkedIn</div>
         </div>
-      </div>
+      </div> */}
 
       {/* Note */}
       <p className="text-xs text-terminal-textMuted text-center">

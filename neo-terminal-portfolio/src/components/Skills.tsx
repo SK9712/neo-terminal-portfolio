@@ -10,31 +10,39 @@ interface Skill {
 }
 
 const skillsData: Skill[] = [
-  // Frontend
-  { name: 'Angular/React/Next.js', level: 90, category: 'Frontend', icon: '⚛️' },
-  { name: 'TypeScript', level: 85, category: 'Frontend', icon: '📘' },
-  { name: 'Tailwind CSS', level: 88, category: 'Frontend', icon: '🎨' },
-  { name: 'JavaScript', level: 92, category: 'Frontend', icon: '🟨' },
-  
   // Backend
-  { name: 'Node.js', level: 87, category: 'Backend', icon: '🟢' },
-  { name: 'Python', level: 80, category: 'Backend', icon: '🐍' },
-  { name: 'REST APIs', level: 90, category: 'Backend', icon: '🔌' },
-  { name: 'GraphQL', level: 75, category: 'Backend', icon: '📊' },
+  { name: 'Java', level: 95, category: 'Backend', icon: '☕' },
+  { name: 'Spring Boot', level: 92, category: 'Backend', icon: '🍃' },
+  { name: 'REST APIs', level: 93, category: 'Backend', icon: '🔌' },
+  { name: 'Microservices', level: 88, category: 'Backend', icon: '🔧' },
+  { name: 'Python', level: 75, category: 'Backend', icon: '🐍' },
   
   // Database
-  { name: 'PostgreSQL', level: 85, category: 'Database', icon: '🐘' },
-  { name: 'MongoDB', level: 82, category: 'Database', icon: '🍃' },
-  { name: 'Redis', level: 78, category: 'Database', icon: '⚡' },
+  { name: 'PostgreSQL', level: 90, category: 'Database', icon: '🐘' },
+  { name: 'Oracle', level: 88, category: 'Database', icon: '🗄️' },
+  { name: 'MongoDB', level: 85, category: 'Database', icon: '🍃' },
+  { name: 'MariaDB', level: 87, category: 'Database', icon: '🐬' },
+  { name: 'Cassandra', level: 80, category: 'Database', icon: '💾' },
+  { name: 'Redis', level: 86, category: 'Database', icon: '⚡' },
   
-  // DevOps
-  { name: 'Docker', level: 83, category: 'DevOps', icon: '🐳' },
-  { name: 'AWS', level: 80, category: 'DevOps', icon: '☁️' },
-  { name: 'CI/CD', level: 85, category: 'DevOps', icon: '🔄' },
-  { name: 'Git', level: 92, category: 'DevOps', icon: '📦' },
+  // DevOps & Tools
+  { name: 'Docker', level: 90, category: 'DevOps', icon: '🐳' },
+  { name: 'Kubernetes', level: 87, category: 'DevOps', icon: '☸️' },
+  { name: 'Jenkins', level: 88, category: 'DevOps', icon: '🔄' },
+  { name: 'Git', level: 95, category: 'DevOps', icon: '📦' },
+  { name: 'Maven', level: 90, category: 'DevOps', icon: '📦' },
+  { name: 'AWS S3', level: 85, category: 'DevOps', icon: '☁️' },
+  
+  // Messaging & Streaming
+  { name: 'Apache Kafka', level: 88, category: 'Messaging', icon: '📨' },
+  { name: 'Apache NiFi', level: 82, category: 'Messaging', icon: '🌊' },
+  
+  // Frontend
+  { name: 'JavaScript', level: 88, category: 'Frontend', icon: '🟨' },
+  { name: 'React', level: 85, category: 'Frontend', icon: '⚛️' },
 ];
 
-const categories = ['All', 'Frontend', 'Backend', 'Database', 'DevOps'];
+const categories = ['All', 'Backend', 'Database', 'DevOps', 'Messaging', 'Frontend'];
 
 export default function Skills() {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -62,15 +70,15 @@ export default function Skills() {
   }, [selectedCategory]);
 
   const getLevelColor = (level: number) => {
-    if (level >= 85) return 'bg-terminal-green';
-    if (level >= 70) return 'bg-terminal-cyan';
+    if (level >= 90) return 'bg-terminal-green';
+    if (level >= 85) return 'bg-terminal-cyan';
     return 'bg-terminal-command';
   };
 
   const getLevelLabel = (level: number) => {
-    if (level >= 85) return 'Expert';
-    if (level >= 70) return 'Advanced';
-    if (level >= 50) return 'Intermediate';
+    if (level >= 90) return 'Expert';
+    if (level >= 85) return 'Advanced';
+    if (level >= 70) return 'Intermediate';
     return 'Beginner';
   };
 
@@ -127,8 +135,8 @@ export default function Skills() {
                 <div className="flex justify-between items-center text-xs">
                   <span className="text-terminal-textMuted">{skill.category}</span>
                   <span className={`font-semibold ${
-                    skill.level >= 85 ? 'text-terminal-green' :
-                    skill.level >= 70 ? 'text-terminal-cyan' :
+                    skill.level >= 90 ? 'text-terminal-green' :
+                    skill.level >= 85 ? 'text-terminal-cyan' :
                     'text-terminal-command'
                   }`}>
                     {getLevelLabel(skill.level)}
@@ -148,7 +156,7 @@ export default function Skills() {
         </div>
         <div className="terminal-card text-center">
           <div className="text-2xl font-bold text-terminal-green">
-            {skillsData.filter(s => s.level >= 85).length}
+            {skillsData.filter(s => s.level >= 90).length}
           </div>
           <div className="text-xs text-terminal-textMuted mt-1">Expert Level</div>
         </div>
@@ -170,13 +178,13 @@ export default function Skills() {
       <div className="terminal-card bg-terminal-bg">
         <div className="space-y-1 font-mono text-xs">
           <p className="text-terminal-textMuted">
-            <span className="text-terminal-prompt">❯</span> analyzing skills...
+            <span className="text-terminal-prompt">¯</span> analyzing skills...
           </p>
           <p className="text-terminal-green pl-4">
-            ✓ {skillsData.filter(s => s.level >= 85).length} expert-level skills identified
+            ✓ {skillsData.filter(s => s.level >= 90).length} expert-level skills identified
           </p>
           <p className="text-terminal-cyan pl-4">
-            ✓ {skillsData.filter(s => s.level >= 70 && s.level < 85).length} advanced skills mastered
+            ✓ {skillsData.filter(s => s.level >= 85 && s.level < 90).length} advanced skills mastered
           </p>
           <p className="text-terminal-text pl-4">
             ✓ Continuous learning in progress<span className="terminal-cursor"></span>
