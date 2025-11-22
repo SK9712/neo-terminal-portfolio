@@ -111,6 +111,7 @@ export default function ProjectCard({ project, featured = false }: ProjectCardPr
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
               className="terminal-button text-xs p-2 hover:scale-110 transition-transform"
               aria-label="View on GitHub"
               title="View on GitHub"
@@ -131,6 +132,7 @@ export default function ProjectCard({ project, featured = false }: ProjectCardPr
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
               className="terminal-button text-xs p-2 hover:scale-110 transition-transform"
               aria-label="View Live Demo"
               title="View Live Demo"

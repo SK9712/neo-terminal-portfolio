@@ -78,12 +78,12 @@ export default function Hero() {
                     <div className="flex items-center gap-2">
                       <span className="text-terminal-cyan">›</span>
                       <span className="text-terminal-textMuted">Focus:</span>
-                      <span className="text-terminal-green">Web Apps</span>
+                      <span className="text-terminal-green">System Design & Architecture</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <span className="text-terminal-cyan">›</span>
                       <span className="text-terminal-textMuted">Stack:</span>
-                      <span className="text-terminal-text">React/Next.js</span>
+                      <span className="text-terminal-text">Java, Spring Boot, Angular</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <span className="text-terminal-cyan">›</span>
