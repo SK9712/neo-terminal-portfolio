@@ -51,35 +51,36 @@ const profiles: CodingProfile[] = [
 
 export default function CodingProfiles() {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 sm:space-y-6">
       {/* Profiles Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
         {profiles.map((profile, index) => (
           <a
             key={profile.name}
             href={profile.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="terminal-card bg-terminal-bg hover:border-terminal-cyan hover:scale-[1.02] transition-all group"
+            className="terminal-card bg-terminal-bg hover:border-terminal-cyan active:scale-[0.98] sm:hover:scale-[1.02] transition-all group"
             style={{ animationDelay: `${index * 0.1}s` }}
           >
             <div className="space-y-3">
               {/* Header */}
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <span className="text-2xl">{profile.icon}</span>
-                  <div>
-                    <h3 className={`font-bold ${profile.color} group-hover:text-terminal-cyan transition-colors`}>
+              <div className="flex items-center justify-between gap-2">
+                <div className="flex items-center gap-2 min-w-0 flex-1">
+                  <span className="text-xl sm:text-2xl flex-shrink-0">{profile.icon}</span>
+                  <div className="min-w-0 flex-1">
+                    <h3 className={`font-bold text-sm sm:text-base ${profile.color} group-hover:text-terminal-cyan transition-colors truncate`}>
                       {profile.name}
                     </h3>
-                    <p className="text-terminal-textMuted text-xs">@{profile.username}</p>
+                    <p className="text-terminal-textMuted text-xs truncate">@{profile.username}</p>
                   </div>
                 </div>
                 <svg
-                  className="w-5 h-5 text-terminal-textMuted group-hover:text-terminal-cyan group-hover:translate-x-1 transition-all"
+                  className="w-4 h-4 sm:w-5 sm:h-5 text-terminal-textMuted group-hover:text-terminal-cyan group-hover:translate-x-1 transition-all flex-shrink-0"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
+                  aria-hidden="true"
                 >
                   <path
                     strokeLinecap="round"
@@ -91,11 +92,11 @@ export default function CodingProfiles() {
               </div>
 
               {/* Achievements */}
-              <div className="space-y-1.5">
+              <div className="space-y-1.5 sm:space-y-2">
                 {profile.achievements.map((achievement, idx) => (
-                  <div key={idx} className="flex items-start gap-2 text-sm">
-                    <span className="text-terminal-green mt-0.5">✓</span>
-                    <span className="text-terminal-text flex-1">{achievement}</span>
+                  <div key={idx} className="flex items-start gap-2 text-xs sm:text-sm">
+                    <span className="text-terminal-green mt-0.5 flex-shrink-0">✓</span>
+                    <span className="text-terminal-text flex-1 leading-relaxed">{achievement}</span>
                   </div>
                 ))}
               </div>
@@ -113,51 +114,61 @@ export default function CodingProfiles() {
       </div>
 
       {/* Achievements Summary */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div className="terminal-card bg-terminal-bg text-center hover:border-terminal-green transition-colors">
-          <div className="text-2xl font-bold text-terminal-green">⭐⭐⭐⭐⭐⭐</div>
-          <div className="text-xs text-terminal-textMuted mt-1">HackerRank Stars</div>
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+        <div className="terminal-card bg-terminal-bg text-center hover:border-terminal-green active:scale-95 transition-all">
+          <div className="text-lg sm:text-xl md:text-2xl font-bold text-terminal-green leading-tight">
+            ⭐⭐⭐⭐⭐⭐
+          </div>
+          <div className="text-xs text-terminal-textMuted mt-1 sm:mt-2 px-1">HackerRank Stars</div>
         </div>
-        <div className="terminal-card bg-terminal-bg text-center hover:border-terminal-command transition-colors">
-          <div className="text-2xl font-bold text-terminal-command">278+</div>
-          <div className="text-xs text-terminal-textMuted mt-1">LeetCode Problems</div>
+        <div className="terminal-card bg-terminal-bg text-center hover:border-terminal-command active:scale-95 transition-all">
+          <div className="text-xl sm:text-2xl md:text-3xl font-bold text-terminal-command">278+</div>
+          <div className="text-xs text-terminal-textMuted mt-1 sm:mt-2 px-1">LeetCode Problems</div>
         </div>
-        <div className="terminal-card bg-terminal-bg text-center hover:border-terminal-cyan transition-colors">
-          <div className="text-2xl font-bold text-terminal-cyan">1,501</div>
-          <div className="text-xs text-terminal-textMuted mt-1">Contest Rating</div>
+        <div className="terminal-card bg-terminal-bg text-center hover:border-terminal-cyan active:scale-95 transition-all">
+          <div className="text-xl sm:text-2xl md:text-3xl font-bold text-terminal-cyan">1,501</div>
+          <div className="text-xs text-terminal-textMuted mt-1 sm:mt-2 px-1">Contest Rating</div>
         </div>
-        <div className="terminal-card bg-terminal-bg text-center hover:border-terminal-green transition-colors">
-          <div className="text-2xl font-bold text-terminal-green">8+</div>
-          <div className="text-xs text-terminal-textMuted mt-1">Certifications</div>
+        <div className="terminal-card bg-terminal-bg text-center hover:border-terminal-green active:scale-95 transition-all">
+          <div className="text-xl sm:text-2xl md:text-3xl font-bold text-terminal-green">8+</div>
+          <div className="text-xs text-terminal-textMuted mt-1 sm:mt-2 px-1">Certifications</div>
         </div>
       </div>
 
       {/* Recognition */}
       <div className="terminal-card bg-terminal-bg">
-        <div className="space-y-3">
-          <h4 className="text-terminal-cyan font-semibold flex items-center gap-2">
-            <span>🏆</span>
-            Notable Achievements
+        <div className="space-y-3 sm:space-y-4">
+          <h4 className="text-sm sm:text-base text-terminal-cyan font-semibold flex items-center gap-2">
+            <span className="text-base sm:text-lg">🏆</span>
+            <span>Notable Achievements</span>
           </h4>
-          <div className="pl-6 space-y-2 text-sm">
-            <div className="flex items-start gap-2">
-              <span className="text-terminal-green">✓</span>
-              <div>
-                <p className="text-terminal-text">
-                  <span className="font-semibold">CTO's Honour List</span> - Suntec Business Solutions
+          <div className="pl-4 sm:pl-6 space-y-3 sm:space-y-4">
+            <div className="flex items-start gap-2 sm:gap-3">
+              <span className="text-terminal-green mt-0.5 flex-shrink-0">✓</span>
+              <div className="flex-1 min-w-0">
+                <p className="text-terminal-text text-xs sm:text-sm leading-relaxed">
+                  <span className="font-semibold">CTO's Honour List</span>
+                  <span className="hidden sm:inline"> - </span>
+                  <span className="block sm:inline text-terminal-textMuted sm:text-terminal-text">
+                    Suntec Business Solutions
+                  </span>
                 </p>
-                <p className="text-terminal-textMuted text-xs">
+                <p className="text-terminal-textMuted text-xs mt-1 leading-relaxed">
                   Recognition for exceptional contributions to Platform Engineering Team (Oct 2021)
                 </p>
               </div>
             </div>
-            <div className="flex items-start gap-2">
-              <span className="text-terminal-green">✓</span>
-              <div>
-                <p className="text-terminal-text">
-                  <span className="font-semibold">6-Star HackerRank Badge</span> - Problem Solving Excellence
+            <div className="flex items-start gap-2 sm:gap-3">
+              <span className="text-terminal-green mt-0.5 flex-shrink-0">✓</span>
+              <div className="flex-1 min-w-0">
+                <p className="text-terminal-text text-xs sm:text-sm leading-relaxed">
+                  <span className="font-semibold">6-Star HackerRank Badge</span>
+                  <span className="hidden sm:inline"> - </span>
+                  <span className="block sm:inline text-terminal-textMuted sm:text-terminal-text">
+                    Problem Solving Excellence
+                  </span>
                 </p>
-                <p className="text-terminal-textMuted text-xs">
+                <p className="text-terminal-textMuted text-xs mt-1 leading-relaxed">
                   Awarded for mastery in Algorithms and Data Structures (Feb 2018)
                 </p>
               </div>
@@ -167,8 +178,8 @@ export default function CodingProfiles() {
       </div>
 
       {/* Terminal Output */}
-      <div className="terminal-card bg-terminal-bg">
-        <div className="space-y-1 font-mono text-xs">
+      <div className="terminal-card bg-terminal-bg overflow-x-auto">
+        <div className="space-y-1 font-mono text-xs whitespace-nowrap">
           <p className="text-terminal-textMuted">
             <span className="text-terminal-prompt">¯</span> Fetching coding profiles...
           </p>

@@ -39,7 +39,9 @@ const skillsData: Skill[] = [
   
   // Frontend
   { name: 'JavaScript', level: 88, category: 'Frontend', icon: '🟨' },
+  { name: 'TypeScript', level: 90, category: 'Frontend', icon: '🔷' },
   { name: 'React', level: 85, category: 'Frontend', icon: '⚛️' },
+  { name: 'Angular', level: 90, category: 'Frontend', icon: '🅰️' },
 ];
 
 const categories = ['All', 'Backend', 'Database', 'DevOps', 'Messaging', 'Frontend'];
