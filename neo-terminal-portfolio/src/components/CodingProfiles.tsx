@@ -162,6 +162,21 @@ export default function CodingProfiles() {
               <span className="text-terminal-green mt-0.5 flex-shrink-0">✓</span>
               <div className="flex-1 min-w-0">
                 <p className="text-terminal-text text-xs sm:text-sm leading-relaxed">
+                  <span className="font-semibold">Letter of Appreciation</span>
+                  <span className="hidden sm:inline"> - </span>
+                  <span className="block sm:inline text-terminal-textMuted sm:text-terminal-text">
+                    Ashraya NGO
+                  </span>
+                </p>
+                <p className="text-terminal-textMuted text-xs mt-1 leading-relaxed">
+                  Received official letter of appreciation for developing a comprehensive website solution for Ashraya NGO, including payment integration, security implementation and digital infrastructure that supports their mission serving thousands of vulnerable individuals across Kerala
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start gap-2 sm:gap-3">
+              <span className="text-terminal-green mt-0.5 flex-shrink-0">✓</span>
+              <div className="flex-1 min-w-0">
+                <p className="text-terminal-text text-xs sm:text-sm leading-relaxed">
                   <span className="font-semibold">6-Star HackerRank Badge</span>
                   <span className="hidden sm:inline"> - </span>
                   <span className="block sm:inline text-terminal-textMuted sm:text-terminal-text">

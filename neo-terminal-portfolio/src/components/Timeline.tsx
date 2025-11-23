@@ -22,8 +22,17 @@ const timelineData: TimelineItem[] = [
     technologies: ['Java', 'Spring Boot', 'Angular 17', 'TypeScript', 'Apache Beam', 'Google Cloud', 'Dataflow', 'Cloud Composer', 'Apache Airflow', 'Jenkins', 'Jenkins Plugin Development', 'Groovy', 'Python', 'IAM', 'Agile'],
     type: 'work',
   },
-  {
+    {
     id: '2',
+    year: '2024',
+    title: 'LoopHoleLaw - Legal Practice Management Platform',
+    company: 'Freelance Project',
+    description: 'Developed comprehensive full-stack web application for legal practice in Kollam, Kerala, serving as both client-facing platform and administrative dashboard. Built responsive frontend using React and Tailwind CSS for optimal user experience across devices. Engineered RESTful API backend with Nodejs and Express, implementing secure JWT authentication and MongoDB database for case management and client data. Deployed production application on AWS EC2 with Nginx, demonstrating end-to-end ownership from design to deployment. Enabled lawyer to streamline practice operations, manage client cases, and establish professional online presence.',
+    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'JWT', 'Tailwind CSS', 'AWS EC2', 'Nginx', 'RESTful API', 'Multer'],
+    type: 'project',
+  },
+  {
+    id: '3',
     year: '2022 - Nov 2024',
     title: 'Software Engineer',
     company: 'Suntec Business Solutions',
@@ -32,7 +41,7 @@ const timelineData: TimelineItem[] = [
     type: 'work',
   },
   {
-    id: '3',
+    id: '4',
     year: '2021 - 2022',
     title: 'Associate Software Engineer',
     company: 'Suntec Business Solutions',
@@ -41,7 +50,7 @@ const timelineData: TimelineItem[] = [
     type: 'work',
   },
   {
-    id: '4',
+    id: '5',
     year: '2019 - 2020',
     title: 'Malicious URL Detection System',
     company: 'Final Year Project - UKF College',
@@ -50,7 +59,7 @@ const timelineData: TimelineItem[] = [
     type: 'project',
   },
   {
-    id: '5',
+    id: '6',
     year: '2018 - 2019',
     title: 'Code Editor Desktop Application',
     company: 'College Project - UKF College',
@@ -59,7 +68,7 @@ const timelineData: TimelineItem[] = [
     type: 'project',
   },
   {
-    id: '6',
+    id: '7',
     year: '2017 - 2018',
     title: 'Ashraya NGO Website',
     company: 'Volunteer Work - Ashraya NGO',
@@ -67,8 +76,17 @@ const timelineData: TimelineItem[] = [
     technologies: ['PHP', 'CodeIgniter', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
     type: 'project',
   },
+    {
+    id: '8',
+    year: '2017 - 2018',
+    title: 'PlayByEars - Affiliate Marketing Website',
+    company: 'Personal Project - UKF College',
+    description: 'Built e-commerce affiliate marketing website using WordPress for Amazon Associates program, demonstrating entrepreneurial mindset and digital marketing skills. Designed and configured product showcase pages, implemented affiliate tracking, and optimized content for search engines. Explored web monetization strategies and gained hands-on experience in content management systems and online business models.',
+    technologies: ['WordPress', 'Amazon Associates', 'SEO', 'Content Management', 'Web Monetization'],
+    type: 'project',
+  },
   {
-    id: '7',
+    id: '9',
     year: '2016 - 2017',
     title: '2D Game Development',
     company: 'Hackathon Project - UKF College',
@@ -77,7 +95,7 @@ const timelineData: TimelineItem[] = [
     type: 'project',
   },
   {
-    id: '8',
+    id: '10',
     year: '2016 - 2020',
     title: 'B.Tech in Computer Science',
     company: 'UKF College of Engineering and Technology',

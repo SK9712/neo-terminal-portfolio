@@ -13,22 +13,22 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Breadcrumbs */}
-        <Breadcrumbs className="mb-8" />
+        <Breadcrumbs className="mb-6 md:mb-8" />
 
         {/* Page Header */}
-        <div className="terminal-card mb-8 animate-fade-in">
+        <div className="terminal-card mb-6 md:mb-8 animate-fade-in">
           <div className="space-y-2">
-            <p className="text-terminal-textMuted">
+            <p className="text-terminal-textMuted text-sm md:text-base">
               <span className="terminal-prompt">¯</span> cat about.md
             </p>
-            <div className="pl-4">
-              <h1 className="text-4xl font-bold text-gradient mb-2">
+            <div className="pl-2 md:pl-4">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gradient mb-2">
                 About Me
               </h1>
-              <p className="text-terminal-textMuted">
+              <p className="text-terminal-textMuted text-sm md:text-base">
                 Full Stack Developer | Backend Specialist<span className="terminal-cursor"></span>
               </p>
             </div>
@@ -36,25 +36,25 @@ export default function AboutPage() {
         </div>
 
         {/* About Content */}
-        <div className="space-y-8">
+        <div className="space-y-6 md:space-y-8">
           {/* Bio Section with Profile Picture */}
           <div className="terminal-card animate-slide-up">
             <div className="space-y-4">
-              <h2 className="text-2xl font-bold text-terminal-cyan flex items-center">
+              <h2 className="text-xl sm:text-2xl font-bold text-terminal-cyan flex items-center">
                 <span className="text-terminal-prompt mr-2">›</span>
                 Bio
               </h2>
-              <div className="pl-6">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-start">
+              <div className="pl-2 sm:pl-6">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 items-start">
                   {/* Profile Picture */}
-                  <div className="md:col-span-1 flex justify-center md:justify-start">
-                    <div className="relative group">
+                  <div className="lg:col-span-1 flex justify-center lg:justify-start">
+                    <div className="relative group w-full max-w-xs">
                       {/* Decorative border effect */}
                       <div className="absolute -inset-1 bg-gradient-to-r from-terminal-cyan to-terminal-green rounded-lg opacity-75 group-hover:opacity-100 blur transition duration-300"></div>
                       
                       {/* Image container */}
                       <div className="relative">
-                        <div className="w-60 h-60 rounded-lg overflow-hidden border-2 border-terminal-cyan bg-terminal-bg">
+                        <div className="w-full aspect-square rounded-lg overflow-hidden border-2 border-terminal-cyan bg-terminal-bg">
                           <img
                             src="/profile.jpg"
                             alt={siteConfig.author.name}
@@ -74,49 +74,54 @@ export default function AboutPage() {
                   </div>
 
                   {/* Bio Text */}
-                  <div className="md:col-span-2 space-y-4 text-terminal-text">
-                    <p className="text-lg">
+                  <div className="lg:col-span-2 space-y-3 md:space-y-4 text-terminal-text text-sm sm:text-base">
+                    <p className="text-base sm:text-lg leading-relaxed">
                       Hello! I'm <span className="text-terminal-cyan font-semibold">{siteConfig.author.name}</span>, 
-                      an experienced <span className="text-terminal-green font-semibold">Full Stack Developer</span> with over 4 years of expertise 
-                      in building scalable web applications using <span className="text-terminal-command">Java</span> for backend 
-                      and <span className="text-terminal-command">React</span> for front-end development.
+                      a <span className="text-terminal-green font-semibold">Software Engineer II</span> with 4+ years of experience 
+                      building enterprise-scale applications in backend development, microservices architecture, and cloud infrastructure.
                     </p>
-                    <p>
-                      Currently working as a <span className="text-terminal-cyan font-semibold">Software Engineer at Suntec Business Solutions</span>, 
-                      I specialize in designing <span className="text-terminal-green">REST APIs</span>, implementing <span className="text-terminal-green">microservices architectures</span>, 
-                      and optimizing application performance. My expertise includes working with databases like PostgreSQL, Oracle, and MongoDB, 
-                      along with modern DevOps practices using Docker, Kubernetes, and Jenkins.
+                    <p className="leading-relaxed">
+                      Currently at <span className="text-terminal-cyan font-semibold">Equifax</span>, I work with <span className="text-terminal-green">Google Cloud Platform</span>, 
+                      developing customer onboarding automation, building internal tools with <span className="text-terminal-command">Angular</span> and <span className="text-terminal-command">TypeScript</span>, 
+                      and creating data pipelines using <span className="text-terminal-green">Apache Beam</span> and <span className="text-terminal-green">Dataflow</span>. 
+                      I also developed a custom Jenkins plugin to streamline complex build configurations across teams.
                     </p>
-                    <p>
-                      I'm passionate about <span className="text-terminal-cyan">clean code</span>, <span className="text-terminal-cyan">system design</span>, 
-                      and <span className="text-terminal-cyan">continuous learning</span>. With a 6-star rating on HackerRank and 278+ problems solved on LeetCode, 
-                      I constantly challenge myself to improve my problem-solving skills. I believe in writing maintainable, efficient code and 
-                      collaborating in Agile teams to deliver high-quality solutions.
+                    <p className="leading-relaxed">
+                      Previously at <span className="text-terminal-cyan font-semibold">Suntec Business Solutions</span>, I contributed to the <span className="text-terminal-green">Xelerate platform</span> - 
+                      an enterprise revenue management system serving global banking and financial institutions. I worked on optimizing API performance with <span className="text-terminal-command">Spring WebFlux</span> and <span className="text-terminal-command">Redis</span>, 
+                      building real-time data pipelines with <span className="text-terminal-command">Kafka</span>, implementing authentication systems with <span className="text-terminal-command">OAuth2</span> and <span className="text-terminal-command">SAML</span>, 
+                      and developing a custom DSL using <span className="text-terminal-command">ANTLR</span> for product configuration workflows.
                     </p>
-                    <p className="text-terminal-textMuted">
-                      When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, 
-                      or solving algorithmic challenges. I'm always eager to learn, grow, and tackle new challenges in the ever-evolving tech landscape.
+                    <p className="leading-relaxed">
+                      I'm passionate about <span className="text-terminal-cyan">clean code</span>, <span className="text-terminal-cyan">distributed systems</span>, 
+                      and <span className="text-terminal-cyan">solving complex problems</span>. With a 6-star rating on HackerRank and 278+ problems solved on LeetCode, 
+                      I continuously sharpen my algorithmic skills. I thrive in <span className="text-terminal-green">Agile environments</span>, believe in writing maintainable code, 
+                      and enjoy tackling challenges that drive real business value.
+                    </p>
+                    <p className="text-terminal-textMuted leading-relaxed">
+                      When I'm not coding, you'll find me exploring new technologies, participating in competitive programming on platforms like CodeChef and LeetCode, 
+                      or contributing to technical solutions that make a difference. I'm always eager to learn, grow, and take on new challenges in software engineering.
                     </p>
                   </div>
                 </div>
                 
                 {/* Quick Stats */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 pt-4 mt-4 border-t border-terminal-border">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 pt-4 mt-4 border-t border-terminal-border">
                   <div className="bg-terminal-bg border border-terminal-border rounded p-3 text-center hover:border-terminal-cyan transition-colors cursor-pointer group">
-                    <div className="text-2xl font-bold text-terminal-cyan group-hover:scale-110 transition-transform">4+</div>
-                    <div className="text-xs text-terminal-textMuted mt-1">Years Experience</div>
+                    <div className="text-xl sm:text-2xl font-bold text-terminal-cyan group-hover:scale-110 transition-transform">4+</div>
+                    <div className="text-xs sm:text-sm text-terminal-textMuted mt-1">Years Experience</div>
                   </div>
                   <div className="bg-terminal-bg border border-terminal-border rounded p-3 text-center hover:border-terminal-green transition-colors cursor-pointer group">
-                    <div className="text-2xl font-bold text-terminal-green group-hover:scale-110 transition-transform">278+</div>
-                    <div className="text-xs text-terminal-textMuted mt-1">LeetCode Solved</div>
+                    <div className="text-xl sm:text-2xl font-bold text-terminal-green group-hover:scale-110 transition-transform">278+</div>
+                    <div className="text-xs sm:text-sm text-terminal-textMuted mt-1">LeetCode Solved</div>
                   </div>
                   <div className="bg-terminal-bg border border-terminal-border rounded p-3 text-center hover:border-terminal-command transition-colors cursor-pointer group">
-                    <div className="text-2xl font-bold text-terminal-command group-hover:scale-110 transition-transform">⭐⭐⭐⭐⭐⭐</div>
-                    <div className="text-xs text-terminal-textMuted mt-1">HackerRank Rating</div>
+                    <div className="text-lg sm:text-2xl font-bold text-terminal-command group-hover:scale-110 transition-transform">★★★★★★</div>
+                    <div className="text-xs sm:text-sm text-terminal-textMuted mt-1">HackerRank Rating</div>
                   </div>
                   <div className="bg-terminal-bg border border-terminal-border rounded p-3 text-center hover:border-terminal-cyan transition-colors cursor-pointer group">
-                    <div className="text-2xl font-bold text-terminal-cyan group-hover:scale-110 transition-transform">∞</div>
-                    <div className="text-xs text-terminal-textMuted mt-1">Learning</div>
+                    <div className="text-xl sm:text-2xl font-bold text-terminal-cyan group-hover:scale-110 transition-transform">∞</div>
+                    <div className="text-xs sm:text-sm text-terminal-textMuted mt-1">Learning</div>
                   </div>
                 </div>
               </div>
@@ -126,11 +131,11 @@ export default function AboutPage() {
           {/* Skills Section */}
           <div className="terminal-card animate-slide-up" style={{ animationDelay: '0.1s' }}>
             <div className="space-y-4">
-              <h2 className="text-2xl font-bold text-terminal-cyan flex items-center">
+              <h2 className="text-xl sm:text-2xl font-bold text-terminal-cyan flex items-center">
                 <span className="text-terminal-prompt mr-2">›</span>
                 Skills & Technologies
               </h2>
-              <div className="pl-6">
+              <div className="pl-2 sm:pl-6">
                 <Skills />
               </div>
             </div>
@@ -139,11 +144,11 @@ export default function AboutPage() {
           {/* Coding Profiles Section */}
           <div className="terminal-card animate-slide-up" style={{ animationDelay: '0.15s' }}>
             <div className="space-y-4">
-              <h2 className="text-2xl font-bold text-terminal-cyan flex items-center">
+              <h2 className="text-xl sm:text-2xl font-bold text-terminal-cyan flex items-center">
                 <span className="text-terminal-prompt mr-2">›</span>
                 Coding Profiles & Achievements
               </h2>
-              <div className="pl-6">
+              <div className="pl-2 sm:pl-6">
                 <CodingProfiles />
               </div>
             </div>
@@ -152,11 +157,11 @@ export default function AboutPage() {
           {/* Timeline Section */}
           <div className="terminal-card animate-slide-up" style={{ animationDelay: '0.2s' }}>
             <div className="space-y-4">
-              <h2 className="text-2xl font-bold text-terminal-cyan flex items-center">
+              <h2 className="text-xl sm:text-2xl font-bold text-terminal-cyan flex items-center">
                 <span className="text-terminal-prompt mr-2">›</span>
                 Career Timeline
               </h2>
-              <div className="pl-6">
+              <div className="pl-2 sm:pl-6">
                 <Timeline />
               </div>
             </div>
@@ -165,11 +170,11 @@ export default function AboutPage() {
           {/* Resume Download Section */}
           <div className="terminal-card animate-slide-up" style={{ animationDelay: '0.3s' }}>
             <div className="space-y-4">
-              <h2 className="text-2xl font-bold text-terminal-cyan flex items-center">
+              <h2 className="text-xl sm:text-2xl font-bold text-terminal-cyan flex items-center">
                 <span className="text-terminal-prompt mr-2">›</span>
                 Resume
               </h2>
-              <div className="pl-6">
+              <div className="pl-2 sm:pl-6">
                 <ResumeDownload />
               </div>
             </div>
@@ -177,23 +182,23 @@ export default function AboutPage() {
 
           {/* Call to Action */}
           <div className="terminal-card bg-terminal-bg animate-slide-up" style={{ animationDelay: '0.4s' }}>
-            <div className="text-center space-y-4 py-8">
-              <h3 className="text-2xl font-bold text-gradient">Let's Work Together!</h3>
-              <p className="text-terminal-textMuted max-w-2xl mx-auto">
+            <div className="text-center space-y-4 py-6 sm:py-8 px-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-gradient">Let's Work Together!</h3>
+              <p className="text-terminal-textMuted max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
                 I'm always interested in hearing about new projects and opportunities. 
                 Whether you have a question, want to collaborate, or just want to say hi, feel free to reach out!
               </p>
-              <div className="flex flex-wrap gap-4 justify-center pt-4">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 justify-center pt-4">
                 <a
                   href="/contact"
-                  className="terminal-button hover:scale-105 transition-transform"
+                  className="terminal-button hover:scale-105 transition-transform text-sm sm:text-base"
                 >
                   <span className="text-terminal-prompt mr-2">¯</span>
                   Get In Touch
                 </a>
                 <a
                   href="/projects"
-                  className="terminal-button hover:scale-105 transition-transform"
+                  className="terminal-button hover:scale-105 transition-transform text-sm sm:text-base"
                 >
                   <span className="text-terminal-prompt mr-2">¯</span>
                   View Projects
@@ -202,7 +207,7 @@ export default function AboutPage() {
                   href={siteConfig.author.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="terminal-button hover:scale-105 transition-transform"
+                  className="terminal-button hover:scale-105 transition-transform text-sm sm:text-base"
                 >
                   <span className="text-terminal-prompt mr-2">¯</span>
                   GitHub Profile
