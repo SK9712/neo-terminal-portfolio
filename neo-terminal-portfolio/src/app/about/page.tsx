@@ -7,10 +7,116 @@ import { siteConfig } from '@/lib/config';
 import CodingProfiles from '@/components/CodingProfiles';
 import Certifications from '@/components/Certifications';
 
+// SEO-Optimized Metadata
 export const metadata: Metadata = {
-  title: 'About',
-  description: 'Learn more about Sushant Kumar - Full Stack Developer specializing in Java, Spring Boot, and Microservices',
+  title: 'About Sushant Kumar | Software Engineer II at Equifax | Java & Spring Boot Expert',
+  description: 'Software Engineer II with 4+ years experience in Java, Spring Boot, Angular, microservices, and Google Cloud Platform. Specialized in building enterprise-scale applications, frontend development, backend development, and distributed systems. Currently at Equifax, previously at Suntec Business Solutions. 6-star HackerRank rating, 278+ LeetCode problems solved.',
+  keywords: [
+    // Primary Keywords
+    'Sushant Kumar',
+    'Software Engineer',
+    'Full Stack Developer',
+    'Backend Developer',
+    
+    // Technical Skills
+    'Java Developer',
+    'Spring Boot',
+    'Microservices',
+    'Google Cloud Platform',
+    'Apache Kafka',
+    'Redis',
+    'REST API',
+    
+    // Expertise Areas
+    'Enterprise Software Development',
+    'Distributed Systems',
+    'Cloud Architecture',
+    'Backend Development',
+    'API Development',
+    
+    // Companies & Experience
+    'Equifax Engineer',
+    'Suntec Business Solutions',
+    'Revenue Management Systems',
+    
+    // Achievements
+    'HackerRank 6 Star',
+    'LeetCode Problems',
+    'Competitive Programming',
+    
+    // Location-based
+    'Software Engineer Kollam',
+    'Java Developer Kerala',
+    'Backend Developer India',
+    
+    // Technologies
+    'Angular',
+    'TypeScript',
+    'Apache Beam',
+    'Dataflow',
+    'OAuth2',
+    'SAML',
+    'Jenkins Plugin Development',
+  ],
+  authors: [
+    { 
+      name: 'Sushant Kumar',
+      url: siteConfig.url 
+    }
+  ],
+  creator: 'Sushant Kumar',
+  publisher: 'Sushant Kumar',
+  
+  // OpenGraph
+  openGraph: {
+    title: 'About Sushant Kumar | Software Engineer II at Equifax',
+    description: 'Experienced Software Engineer specializing in Java, Spring Boot, microservices architecture, and Google Cloud Platform. 4+ years building enterprise applications.',
+    url: `${siteConfig.url}/about`,
+    siteName: siteConfig.name,
+    locale: 'en_US',
+    type: 'profile',
+    images: [
+      {
+        url: `${siteConfig.url}/profile.jpg`,
+        width: 1200,
+        height: 1200,
+        alt: 'Sushant Kumar - Software Engineer',
+      },
+    ],
+  },
+  
+  // Twitter Card
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Sushant Kumar | Software Engineer II at Equifax',
+    description: 'Software Engineer with 4+ years in Java, Spring Boot & GCP. Building enterprise-scale applications at Equifax.',
+    creator: siteConfig.author.twitter?.split('/').pop(),
+    images: [`${siteConfig.url}/profile.jpg`],
+  },
+  
+  // Additional SEO
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  
+  alternates: {
+    canonical: `${siteConfig.url}/about`,
+  },
+  
+  // Additional metadata
+  category: 'Technology',
+  classification: 'Software Engineering Portfolio',
 };
+
 
 export default function AboutPage() {
   return (
@@ -30,7 +136,7 @@ export default function AboutPage() {
                 About Me
               </h1>
               <p className="text-terminal-textMuted text-sm md:text-base">
-                Full Stack Developer | Backend Specialist<span className="terminal-cursor"></span>
+                Software Engineer II at Equifax | Java, Spring Boot & Angular Specialist | Microservices Expert<span className="terminal-cursor"></span>
               </p>
             </div>
           </div>
