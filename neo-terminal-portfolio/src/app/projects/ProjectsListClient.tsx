@@ -79,7 +79,7 @@ export default function ProjectsListClient({
       case 'Open Source':
         return '🌟';
       case 'Full Stack':
-        return '🚀';
+        return '🛠️';
       default:
         return '📦';
     }

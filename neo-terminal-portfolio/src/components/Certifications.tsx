@@ -43,7 +43,7 @@ const certificationsData: Certification[] = [
     issueDate: 'Jul 2020',
     credentialId: 'dc291f42229c',
     credentialUrl: 'https://www.hackerrank.com/certificates/dc291f42229c',
-    logo: '💚',
+    logo: '🏆',
     skills: ['Algorithms', 'Data Structures'],
   },
   {

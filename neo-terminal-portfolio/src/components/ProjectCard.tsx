@@ -33,7 +33,7 @@ export default function ProjectCard({ project, featured = false }: ProjectCardPr
       case 'Open Source':
         return '🌟';
       case 'Full Stack':
-        return '🚀';
+        return '🛠️';
       default:
         return '📦';
     }

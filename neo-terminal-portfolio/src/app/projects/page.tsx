@@ -132,7 +132,7 @@ export default function ProjectsPage() {
               <div>
                 <p className="text-terminal-textMuted mb-2">Backend & Infrastructure</p>
                 <div className="flex flex-wrap gap-2">
-                  {['Java', 'Spring Boot', 'PHP', 'Python', 'Node.js', 'Apache Kafka', 'Redis', 'Oracle', 'MySQL', 'MariaDB'].map(tech => (
+                  {['Java', 'Spring Boot', 'Python', 'Node.js', 'Apache Kafka', 'Redis', 'Oracle', 'MySQL', 'MariaDB'].map(tech => (
                     <span key={tech} className="px-2 py-1 bg-terminal-bg border border-terminal-border rounded text-terminal-text text-xs">
                       {tech}
                     </span>
@@ -142,7 +142,7 @@ export default function ProjectsPage() {
               <div>
                 <p className="text-terminal-textMuted mb-2">Frontend & Full-Stack</p>
                 <div className="flex flex-wrap gap-2">
-                  {['Next.js', 'React', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'Bootstrap', 'Electron.js'].map(tech => (
+                  {['Angular', 'React', 'Next.js', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'Bootstrap', 'Electron.js'].map(tech => (
                     <span key={tech} className="px-2 py-1 bg-terminal-bg border border-terminal-border rounded text-terminal-text text-xs">
                       {tech}
                     </span>
@@ -152,7 +152,7 @@ export default function ProjectsPage() {
               <div>
                 <p className="text-terminal-textMuted mb-2">Cloud & DevOps</p>
                 <div className="flex flex-wrap gap-2">
-                  {['AWS', 'Docker', 'Kubernetes', 'Jenkins', 'GitHub Actions', 'Apache NiFi'].map(tech => (
+                  {['Google Cloud Platform', 'AWS', 'Docker', 'Kubernetes', 'Jenkins', 'GitHub Actions', 'Apache NiFi'].map(tech => (
                     <span key={tech} className="px-2 py-1 bg-terminal-bg border border-terminal-border rounded text-terminal-text text-xs">
                       {tech}
                     </span>
@@ -174,7 +174,7 @@ export default function ProjectsPage() {
               <p>
                 Want to see more? Check out my{' '}
                 <a
-                  href="https://github.com/sushantkct"
+                  href="https://github.com/sushantdevx"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="terminal-link"
