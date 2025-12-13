@@ -98,7 +98,7 @@ export default function Hero() {
                     <ul className="space-y-1.5 sm:space-y-2 pl-4 sm:pl-6">
                       <li className="flex items-start gap-2 text-terminal-text">
                         <span className="text-terminal-green flex-shrink-0 mt-0.5">✓</span>
-                        <span>4+ years building production-ready applications</span>
+                        <span>4.5+ years building production-ready applications</span>
                       </li>
                       <li className="flex items-start gap-2 text-terminal-text">
                         <span className="text-terminal-green flex-shrink-0 mt-0.5">✓</span>

@@ -56,7 +56,7 @@ export default function ProjectDetailPage({ params }: ProjectPageProps) {
         'Secure online donation system processing real transactions',
         'Self-service content management reducing technical dependencies',
         'Improved digital presence and donor accessibility',
-        'Platform still operational 4+ years after deployment'
+        'Platform still operational 4.5+ years after deployment'
       ],
       features: [
         'Secure admin authentication with brute force protection',

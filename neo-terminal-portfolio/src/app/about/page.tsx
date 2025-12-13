@@ -11,7 +11,7 @@ import Certifications from '@/components/Certifications';
 // SEO-Optimized Metadata
 export const metadata: Metadata = {
   title: 'About Sushant Kumar | Software Engineer II at Equifax | Java & Spring Boot Expert',
-  description: 'Software Engineer II with 4+ years experience in Java, Spring Boot, Angular, microservices, and Google Cloud Platform. Specialized in building enterprise-scale applications, frontend development, backend development, and distributed systems. Currently at Equifax, previously at Suntec Business Solutions. 6-star HackerRank rating, 278+ LeetCode problems solved.',
+  description: 'Software Engineer II with 4.5+ years experience in Java, Spring Boot, Angular, microservices, and Google Cloud Platform. Specialized in building enterprise-scale applications, frontend development, backend development, and distributed systems. Currently at Equifax, previously at Suntec Business Solutions. 6-star HackerRank rating, 278+ LeetCode problems solved.',
   keywords: [
     // Primary Keywords
     'Sushant Kumar',
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   // OpenGraph
   openGraph: {
     title: 'About Sushant Kumar | Software Engineer II at Equifax',
-    description: 'Experienced Software Engineer specializing in Java, Spring Boot, microservices architecture, and Google Cloud Platform. 4+ years building enterprise applications.',
+    description: 'Experienced Software Engineer specializing in Java, Spring Boot, microservices architecture, and Google Cloud Platform. 4.5+ years building enterprise applications.',
     url: `${siteConfig.url}/about`,
     siteName: siteConfig.name,
     locale: 'en_US',
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'About Sushant Kumar | Software Engineer II at Equifax',
-    description: 'Software Engineer with 4+ years in Java, Spring Boot & GCP. Building enterprise-scale applications at Equifax.',
+    description: 'Software Engineer with 4.5+ years in Java, Spring Boot & GCP. Building enterprise-scale applications at Equifax.',
     creator: siteConfig.author.twitter?.split('/').pop(),
     images: [`${siteConfig.url}/profile.jpg`],
   },
@@ -196,7 +196,7 @@ export default function AboutPage() {
                   <div className="lg:col-span-2 space-y-4 text-terminal-text">
                     <p className="text-base sm:text-lg leading-relaxed">
                       Hello! I'm <span className="text-terminal-cyan font-semibold">Sushant Kumar</span>, 
-                      a <span className="text-terminal-green font-semibold">Software Engineer II at Equifax</span> with 4+ years of experience 
+                      a <span className="text-terminal-green font-semibold">Software Engineer II at Equifax</span> with 4.5+ years of experience 
                       specializing in <span className="text-terminal-cyan">enterprise-scale backend development</span> and 
                       <span className="text-terminal-cyan"> modern web applications</span>.
                     </p>
@@ -225,7 +225,7 @@ export default function AboutPage() {
                     {/* Quick Stats */}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 pt-4">
                       <div className="bg-terminal-bg border border-terminal-border rounded p-2 sm:p-3 text-center hover:border-terminal-cyan transition-colors">
-                        <div className="text-lg sm:text-2xl font-bold text-terminal-cyan">4+</div>
+                        <div className="text-lg sm:text-2xl font-bold text-terminal-cyan">4.5+</div>
                         <div className="text-xs text-terminal-textMuted mt-1">Years Exp</div>
                       </div>
                       <div className="bg-terminal-bg border border-terminal-border rounded p-2 sm:p-3 text-center hover:border-terminal-green transition-colors">
