@@ -12,7 +12,7 @@ export const siteConfig: SiteConfig = {
     twitter: "https://x.com/sushantk_tech",
     medium: "https://medium.com/@sushantk.dev",
     hackerrank: "https://www.hackerrank.com/profile/lOne9wOlf",
-    leetcode: "https://leetcode.com/u/sushantdevx/"
+    leetcode: "https://leetcode.com/u/sushantk-dev/"
   },
   version: "1.0.0",
   lastUpdated: new Date().toISOString().split("T")[0],

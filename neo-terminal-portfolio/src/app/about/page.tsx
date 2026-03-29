@@ -185,7 +185,7 @@ export default function AboutPage() {
                         <div className="mt-3 text-center">
                           <div className="inline-flex items-center gap-2 px-3 py-1 bg-terminal-bg border border-terminal-cyan rounded text-xs font-mono">
                             <span className="w-2 h-2 bg-terminal-green rounded-full animate-pulse"></span>
-                            <span className="text-terminal-text">sushant@equifax</span>
+                            <span className="text-terminal-text">sushantk.dev</span>
                           </div>
                         </div>
                       </div>
@@ -196,7 +196,7 @@ export default function AboutPage() {
                   <div className="lg:col-span-2 space-y-4 text-terminal-text">
                     <p className="text-base sm:text-lg leading-relaxed">
                       Hello! I'm <span className="text-terminal-cyan font-semibold">Sushant Kumar</span>, 
-                      a <span className="text-terminal-green font-semibold">Software Engineer II at Equifax</span> with 4.5+ years of professional experience 
+                      a <span className="text-terminal-green font-semibold">Software Engineer II at Equifax</span> with 5+ years of professional experience 
                       specializing in <span className="text-terminal-cyan">enterprise Java development</span>, 
                       <span className="text-terminal-cyan">microservices architecture</span>, and 
                       <span className="text-terminal-cyan">full-stack engineering</span>.
@@ -233,7 +233,7 @@ export default function AboutPage() {
                     {/* Quick Stats */}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 pt-4">
                       <div className="bg-terminal-bg border border-terminal-border rounded p-2 sm:p-3 text-center hover:border-terminal-cyan transition-colors">
-                        <div className="text-lg sm:text-2xl font-bold text-terminal-cyan">4.5+</div>
+                        <div className="text-lg sm:text-2xl font-bold text-terminal-cyan">5+</div>
                         <div className="text-xs text-terminal-textMuted mt-1">Years Exp</div>
                       </div>
                       <div className="bg-terminal-bg border border-terminal-border rounded p-2 sm:p-3 text-center hover:border-terminal-green transition-colors">

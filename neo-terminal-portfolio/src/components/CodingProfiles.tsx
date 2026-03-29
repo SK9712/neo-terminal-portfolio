@@ -25,8 +25,8 @@ const profiles: CodingProfile[] = [
   },
   {
     name: 'LeetCode',
-    username: 'sushantdevx',
-    url: 'https://leetcode.com/sushantdevx',
+    username: 'sushantk-dev',
+    url: 'https://leetcode.com/sushantk-dev',
     achievements: [
       '278+ problems solved',
       'Regular contest participant',
@@ -36,8 +36,8 @@ const profiles: CodingProfile[] = [
   },
   {
     name: 'GitHub',
-    username: 'sushantdevx',
-    url: 'https://github.com/sushantdevx',
+    username: 'sushantk-dev',
+    url: 'https://github.com/sushantk-dev',
     achievements: [
       'Active open source contributor',
       'Multiple production-ready projects',
