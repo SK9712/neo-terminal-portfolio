@@ -11,7 +11,7 @@ import Certifications from '@/components/Certifications';
 // SEO-Optimized Metadata
 export const metadata: Metadata = {
   title: 'About Sushant Kumar | Software Engineer II at Equifax | Java & Spring Boot Expert',
-  description: 'Software Engineer II with 4.5+ years experience in Java, Spring Boot, Angular, microservices, and Google Cloud Platform. Specialized in building enterprise-scale applications, frontend development, backend development, and distributed systems. Currently at Equifax, previously at Suntec Business Solutions. 6-star HackerRank rating, 278+ LeetCode problems solved.',
+  description: 'Software Engineer II with 5+ years experience in Java, Spring Boot, Angular, microservices, and Google Cloud Platform. Specialized in building enterprise-scale applications, frontend development, backend development, and distributed systems. Currently at Equifax, previously at Suntec Business Solutions. 6-star HackerRank rating, 278+ LeetCode problems solved.',
   keywords: [
     // Primary Keywords
     'Sushant Kumar',
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   // OpenGraph
   openGraph: {
     title: 'About Sushant Kumar | Software Engineer II at Equifax',
-    description: 'Experienced Software Engineer specializing in Java, Spring Boot, microservices architecture, and Google Cloud Platform. 4.5+ years building enterprise applications.',
+    description: 'Experienced Software Engineer specializing in Java, Spring Boot, microservices architecture, and Google Cloud Platform. 5+ years building enterprise applications.',
     url: `${siteConfig.url}/about`,
     siteName: siteConfig.name,
     locale: 'en_US',
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'About Sushant Kumar | Software Engineer II at Equifax',
-    description: 'Software Engineer with 4.5+ years in Java, Spring Boot & GCP. Building enterprise-scale applications at Equifax.',
+    description: 'Software Engineer with 5+ years in Java, Spring Boot & GCP. Building enterprise-scale applications at Equifax.',
     creator: siteConfig.author.twitter?.split('/').pop(),
     images: [`${siteConfig.url}/profile.jpg`],
   },
