@@ -199,7 +199,7 @@ export default function AboutPage() {
                       a <span className="text-terminal-green font-semibold">Software Engineer II at Equifax</span> with 5+ years of professional experience 
                       specializing in <span className="text-terminal-cyan">enterprise Java development</span>, 
                       <span className="text-terminal-cyan">microservices architecture</span>, and 
-                      <span className="text-terminal-cyan">full-stack engineering</span>.
+                      <span className="text-terminal-cyan"> full-stack engineering</span>.
                     </p>
 
                     <p className="text-sm sm:text-base leading-relaxed">
